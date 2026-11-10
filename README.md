@@ -24,7 +24,7 @@ Email and WhatsApp links work without a form service. The inquiry form reads `VI
 VITE_CONTACT_ENDPOINT=https://your-hosted-form-endpoint.example/submit
 ```
 
-Without this value, the form reports that online delivery is not configured and directs visitors to email or WhatsApp. `VITE_*` values are included in the browser bundle: only put a public endpoint URL here, never a private API key or secret. Verify the chosen service accepts browser requests and the submitted fields before publishing.
+Without this value, the form prepares an encoded email draft containing the visitor's project details. Visitors explicitly open the draft in their email app to review and send it; the website does not claim it was delivered. Direct email and WhatsApp links remain available. `VITE_*` values are included in the browser bundle: only put a public endpoint URL here, never a private API key or secret. Verify the chosen service accepts browser requests and the submitted fields before publishing.
 
 ## Portfolio content
 
